@@ -1,0 +1,94 @@
+ https://github.com/eastflag/scoreboard
+
+Day2 소스코드
+
+mdn 에서
+조건에서 true false를 판별 / 불린값을 리턴
+test 
+predicate 
+
+react 는
+레퍼런스가 관련되어있어서 (주소를 참조해서)
+immutable 타입을 써야한다.
+
+return {} 
+// JSON 객체를 리턴할 때?! 
+
+npm install -g npm@lastest // node 를 최신으로 업데이트 하라!
+
+요즘에는 npx create-react-app 어쩌구 한다 // 현재 버전의 npx create-react-app을 하라는 뜻!
+기존에 npm i create-react-app 하면 버전이 최신이 되지 않기때문에(npm이 설치될 당시의 버전)
+
+
+만약 안되면 제어판 > 프로그램 제거 > node 지우고 node.org가서 새로 제일 최신것 설치하기
+
+
+=== 스케폴딩(뼈대를 잡아주다...!)= 번들러 webpack , parcel 툴.! 
+ cli 커멘드라인 인터페이스 = create-reacr-app 같은 cmd 에서 치는 명령어 같은거
+
+
+======  creare-react-app 폴더 구조
+serviceWorker / pwa를 구성하는...
+
+hmr과정(바로바로 소스를 바꾸면서 확인하는 과넞ㅇ)
+start - 개발환경에서 스타트 (webpack-dev-server 가 실행되어서...)
+test - test 할때 mocha같은거 이용해서 테스트 하는거
+bulid - 운영하기위해 컴파일되며... build파일에 컴파일된 소스가 생선된다. -> 빌드 소스를 운영할 때 올린다.
+eject - 웹팩에있는걸 꺼내서 커스텀...
+
+
+인클루드 방식은 개발할때 편의성인거지,
+실제로는 페이지가 로딩 될 때마다 인클루드를 다시 다 렌더링한다.
+spa와 인클로드는 다르다!
+
+npm init을 하면 npm 을 로컬에 생성 > package.json 생김!
+
+entry point : 진입점
+output: 출력점 dist 폴더 => main.js 가 생김
+
+
+npm i -S 어쩌구 (어쩌구를 설치하고, 패키지 제이슨에 기록해라)
+어쩌구는 npmjs.com 에 올라와 있는 오픈소스 라이브러리 즉 어쩌구는 npmjs에서 가져오는 것
+
+하면 package.lock depndencies 에 생김
+nodemodules 생김 > 설치한 라이브러리 생김
+
+package.json의 4.1버전앞의 ^4.1는...! ^4가 안바뀌는 최신을 가져와라 즉 5.대가 되면 업뎃을 안함. ~4.1.2은 .2 마이너만 업뎃
+^없으면 적힌 버전을 설치.
+
+
+npm install은 packge.json 과 로컬을 비교해서 package.json에 있는 dependencies를 로컬에 설치한다.
+
+npm i -D devdependencies 에 기록 (개발할때만 필요 운영에는 필요 없음 빌드할때는 안 생김! dependencies에 넣어도 되는데 그러면 소스가 커짐...!!!)
+
+dependencies : 소스에 필요한 라이브러리
+devDependencies : 개발에만 필요한 것
+
+webpack를 설치하면 오조오억개가 설치되는데 
+webpack이 또 다른 것에 의존하고, 또 그게 다른걸 의존해서 그걸 다~ 깔기때문에
+
+module방식은 의존성을 npm이 관리를해준돠.
+
+package-lock.json 은 의존성을 더 잘 관리해주는 정도라고만 생각하라
+
+서드파티 라이브러리 : 남이 만든거 즉 내가 관리안(못?)하는거
+
+블로그
+https://eastflag.co.kr/frontend/frontend-webpack/npm_webpack/ 
+읽어보기! webpack관련 다 나옴!!!!
+
+
+https://ideveloper2.tistory.com/159
+- shallow comparison react
+
+
+
+
+미사용 자동으로 사라지게하는거
+ctrl+alt+O
+
+커밋전에 파일을 우클릭 쇼diff해서 확인하기!
+
+
+
+alt+enter 네임드 익스폴트 쉽게 가져오기
