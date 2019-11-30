@@ -1,0 +1,39 @@
+파일 생성 우클릭 edit file tempalte
+템플릿 설정 가능
+
+import React from 'react';
+
+export const ${NAME} = (props) => {
+    return(
+        <div>
+            ${NAME} works!!
+        </div>
+    )
+}
+
+html5에 벨리데이션 추가가 됨
+form.checkValidity();
+
+
+https://eastflag.co.kr/%EA%B0%9C%EB%B0%9C%EC%9E%90-%EB%A1%9C%EB%93%9C%EB%A7%B5/
+
+
+리덕스
+1. (사용하기 위해 스토어에)가입 (subscribe)
+
+
+@@init ---> createStore했을때 생성
+
+
+alt _ enter >>> 자동 경로 불ㄹ어괴
+
+alt _ ctrl _ o  >>>>> 안쓰는거 자동정리
+
+
+======= 패키지 설계 방법 2*3 6개
+HC [] 높은 응집도*3
+
+
+
+LD 낮은 의존도 *3
+low depandencies
