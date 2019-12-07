@@ -1,0 +1,9 @@
+// 파일 이름에 .module 이 들어있는 이유: 해당 component에서만 scss파일을 적용하기 위해
+// 웹팩이 scss를 전부 모아서 컴파일 되기 때문에...!!!! .modules를 붙혀주어야 한당..
+// 후처리기 auto-prefix 모듈은 자동으로 프리픽스를 부여 함
+.stock{
+  color:red;
+}
+.baz{
+  opacity: 0.9;
+}
